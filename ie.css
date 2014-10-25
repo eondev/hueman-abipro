@@ -1,0 +1,26 @@
+.cb-slideshow {
+    display: none;
+}
+
+body {
+    background-color: #303030;
+    background-image: url(img/ie/bg_n.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer, #footer {
+    background: transparent;
+    background-color: transparent;
+}
+
+.site-title {
+    float: right;
+    white-space: nowrap;
+}
+
+.nav-topbar {
+    background-color: #dd3333;
+}
+    

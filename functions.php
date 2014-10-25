@@ -321,18 +321,21 @@ if ( ! function_exists( 'alx_site_title' ) ) {
 	
 		// Text or image?
 		if ( ot_get_option('custom-logo') ) {
-			$logo = '<img src="'.ot_get_option('custom-logo').'" alt="'.get_bloginfo('name').'">';
+			$logo = '<img src="'.ot_get_option('custom-logo').'" alt="'.get_bloginfo('name').'"> ' . get_bloginfo('name');
 		} else {
 			$logo = get_bloginfo('name');
 		}
 		
 		$link = '<a href="'.home_url('/').'" rel="home">'.$logo.'</a>';
 		
+		/*
 		if ( is_front_page() || is_home() ) {
 			$sitename = '<h1 class="site-title">'.$link.'</h1>'."\n";
 		} else {
 			$sitename = '<p class="site-title">'.$link.'</p>'."\n";
 		}
+		*/
+		$sitename = '<h1 class="site-title">'.$link.'</h1>'."\n";
 		
 		return $sitename;
 	}
